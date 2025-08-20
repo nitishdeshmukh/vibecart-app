@@ -34,12 +34,12 @@ function App() {
     dispatch(checkAuth(token));
   }, [dispatch]);
 
-  if (isLoading) return <Skeleton className="w-[800] bg-black h-[600px]" />;
+  if (isLoading) return <Skeleton className="w-screen bg-black/75 h-screen" />;
 
   console.log(isLoading, user);
 
   return (
-    <div className="flex flex-col overflow-hidden bg-white">
+    <div className="flex flex-col overflow-hidden bg-white font-inter">
       <Routes>
         <Route
           path="/"
